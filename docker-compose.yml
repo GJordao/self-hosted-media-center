@@ -1,0 +1,25 @@
+version: '3'
+services:
+  emby:
+    image: emby/embyserver:latest
+    restart: always
+    environment:
+      - UID=0
+      - GID=100
+      - GIDLIST=100
+    ports:
+      - "8096:8096"
+      - "8920:8920"
+    volumes:
+      - ./config:/config
+      - ./share1:/mnt/share1
+      - ./share2:/mnt/share2
+      - ./media:/home/media
+
+  torrent:
+    image: boypt/cloud-torrent:latest
+    restart: always
+    ports:
+      - "6789:3000"
+    volumes:
+      - ./media:/downloads

@@ -1,0 +1,11 @@
+config/*
+!config/.gitkeep
+
+share1/*
+!share1/.gitkeep
+
+share2/*
+!share2/.gitkeep
+
+media/*
+!media/.gitkeep
