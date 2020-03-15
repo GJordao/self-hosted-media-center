@@ -8,9 +8,9 @@ Clone the repository and run:
 docker-compose up -d
 ```
 
-The Emby media center should be accessible in `http://localhost.datix:8096/`
+The Emby media center should be accessible in `http://localhost:8096/`
 
-The torrent manager should be accessible in `http://localhost.datix:6789/`
+The torrent manager should be accessible in `http://localhost:6789/`
 
 # Media location
 
