@@ -32,4 +32,4 @@ services:
       - "80:${REV_PORT:-80}"
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d
-      - ./nginx/links.html:/var/www/links.html
+      - ./nginx/index.html:/etc/nginx/index.html
