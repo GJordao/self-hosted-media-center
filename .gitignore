@@ -9,3 +9,5 @@ share2/*
 
 media/*
 !media/.gitkeep
+
+.env
