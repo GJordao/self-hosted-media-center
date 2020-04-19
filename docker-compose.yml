@@ -25,6 +25,7 @@ services:
     volumes:
       - ./media:/downloads
 
+# https://github.com/boypt/simple-torrent/wiki/ReverseProxy - to be checked
   nginx:
     image: nginx:latest
     restart: always
