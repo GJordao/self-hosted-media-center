@@ -34,3 +34,13 @@ services:
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./nginx/index.html:/etc/nginx/index.html
+
+  # https://github.com/geek1011/BookBrowser
+  ebook:
+    container_name: ebook_manager
+    restart: always
+    build: ./BookBrowser
+    ports:
+      - "8090:8090"
+    volumes:
+      - ./media:/books
