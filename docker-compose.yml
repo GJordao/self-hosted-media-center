@@ -15,7 +15,7 @@ services:
       - ./config:/config
       - ./share1:/mnt/share1
       - ./share2:/mnt/share2
-      - ./media:/home/media
+      - "${CUSTOM_DOWNLOAD_PATH:-./media}:/home/media"
 
   torrent:
     image: boypt/cloud-torrent:latest
